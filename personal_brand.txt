@@ -1,0 +1,13 @@
+Personal Brand
+==============
+
+Name: Ananya
+Title: Aspiring Data Science Engineer
+
+Tagline:
+I turn raw data into actionable insights.
+I build machine learning models to solve real-world problems.
+
+Career Goal:
+To get a data science internship or entry-level data analyst / machine learning role where I can use Python, SQL, data analysis, and machine learning on practical projects.
+

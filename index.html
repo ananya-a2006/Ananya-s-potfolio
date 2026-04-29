@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananya | Data Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="progress"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#home"><span>A</span>Ananya</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#learning">Learning</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="label">Data science portfolio</p>
+        <h1>Ananya</h1>
+        <h2><span id="typing"></span><span class="caret">|</span></h2>
+        <p>I turn raw data into actionable insights and build machine learning models to solve real-world problems.</p>
+        <div class="actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <strong>98.2%</strong>
+      
+        <div class="chips">
+          <b>Python</b><b>Pandas</b><b>SVM</b><b>KNN</b><b>K-Means</b><b>SQL</b>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <p class="label">About me</p>
+      <h2>Building a career through practical data work.</h2>
+      <div class="grid three">
+        <article class="card reveal">
+          <h3>My Journey</h3>
+          <p>I started my journey in Data Science with curiosity about how data influences real-world decisions. Over time, I developed strong interest in analyzing data, building models, and solving practical problems.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Why Data Science?</h3>
+          <p>Data Science combines programming, statistics, and problem-solving. I enjoy discovering patterns and building models that solve real-world problems.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Currently Learning</h3>
+          <p>Python, Pandas, NumPy, SQL, and machine learning techniques such as classification, regression, and clustering.</p>
+        </article>
+      </div>
+      
+    </section>
+
+    <section id="skills" class="section muted">
+      <p class="label">Skills</p>
+      <h2>Structured skill map for data science roles.</h2>
+      <div class="grid four">
+        <article class="card skill reveal">
+          <h3>Programming</h3>
+          <p>Python</p><div class="bar"><span style="width:82%"></span></div>
+          <p>SQL</p><div class="bar"><span style="width:62%"></span></div>
+        </article>
+        <article class="card skill reveal">
+          <h3>Data Analysis</h3>
+          <p>Pandas</p><div class="bar"><span style="width:78%"></span></div>
+          <p>NumPy</p><div class="bar"><span style="width:72%"></span></div>
+        </article>
+        <article class="card skill reveal">
+          <h3>Machine Learning</h3>
+          <p>Classification</p><div class="bar"><span style="width:80%"></span></div>
+          <p>Regression</p><div class="bar"><span style="width:58%"></span></div>
+          <p>Clustering</p><div class="bar"><span style="width:60%"></span></div>
+        </article>
+        <article class="card skill reveal">
+          <h3>Tools</h3>
+          <div class="chips"><b>Jupyter</b><b>GitHub</b><b>Excel</b><b>VS Code</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="label">Projects</p>
+      <h2>Real-world problems, clear methods, measurable results.</h2>
+      <div class="filters reveal">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="classification">Classification</button>
+        <button data-filter="analysis">Analysis</button>
+        <button data-filter="clustering">Clustering</button>
+      </div>
+      <div class="grid two">
+        <article class="project card reveal" data-category="classification">
+          <div class="visual one"></div>
+          <h3>Breast Cancer Classification</h3>
+          <p><strong>Problem:</strong> Predict whether a tumor is malignant or benign.</p>
+          <p><strong>Dataset:</strong> Breast Cancer Wisconsin dataset.</p>
+          <p><strong>Approach:</strong> Cleaned columns, encoded diagnosis, split data, trained SVM kernels and KNN.</p>
+          <p><strong>Model used:</strong> SVM with RBF kernel and KNN.</p>
+          <p><strong>Result:</strong> Best accuracy: 98.2%.</p>
+          <p><strong>Key learning:</strong> Preprocessing and model selection strongly affect performance.</p>
+          <a href="https://github.com/ananya-a2006" target="_blank">GitHub</a>
+        </article>
+        <article class="project card reveal" data-category="analysis">
+          <div class="visual two"></div>
+          <h3>Student Data Preprocessing</h3>
+          <p><strong>Problem:</strong> Prepare student performance data for prediction.</p>
+          <p><strong>Dataset:</strong> Student data with numerical and categorical values.</p>
+          <p><strong>Approach:</strong> Checked missing values, encoded labels, and created train/test split.</p>
+          <p><strong>Model used:</strong> Preprocessing pipeline for supervised learning.</p>
+          <p><strong>Result:</strong> Clean feature set ready for final score prediction.</p>
+          <p><strong>Key learning:</strong> Clean data is the foundation of useful models.</p>
+          <a href="https://github.com/ananya-a2006" target="_blank">GitHub</a>
+        </article>
+        
+      </div>
+    </section>
+
+    <section id="learning" class="section muted">
+      <p class="label">Learning</p>
+      <h2>Learning & Coursework</h2>
+      <div class="grid three">
+        <article class="card reveal"><h3>Python for Data Science</h3><p><strong>Platform:</strong> Self-paced learning</p><p><strong>Key takeaway:</strong> Pandas, NumPy, and data analysis.</p></article>
+        <article class="card reveal"><h3>Machine Learning</h3><p><strong>Platform:</strong> Guided notebook practice</p><p><strong>Key takeaway:</strong> Classification, regression, clustering.</p></article>
+        <article class="card reveal"><h3>SQL In Progress</h3><p><strong>Platform:</strong> Practice-based learning</p><p><strong>Key takeaway:</strong> Data querying and analysis.</p></article>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <p class="label">Blog</p>
+      <h2>Learning reflections.</h2>
+      <div class="grid two">
+        <article class="card reveal"><h3>How KMeans works intuitively</h3><p>KMeans groups nearby points by repeatedly assigning points to the closest center and moving centers until the groups become stable.</p></article>
+        <article class="card reveal"><h3>What I learned from my first ML project</h3><p>A model is only as strong as the data preparation behind it. Cleaning, encoding, splitting, and evaluation matter as much as the algorithm.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="label">Contact</p>
+      <h2>Let's connect.</h2>
+      <div class="grid two">
+        <article class="card reveal">
+          <h3>Find me online</h3>
+          <p>Email: <a href="mailto:ananyapramod66@gmail.com">ananyapramod66@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/ananya-p-r-225721329" target="_blank">ananya-p-r-225721329</a></p>
+          <p>GitHub: <a href="https://github.com/ananya-a2006" target="_blank">github.com/ananya-a2006</a></p>
+        </article>
+        <form class="card form reveal" id="contactForm">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>Copyright 2026 Ananya. Built with HTML, CSS, and JavaScript.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
