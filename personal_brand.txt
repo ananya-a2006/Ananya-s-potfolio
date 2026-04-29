@@ -2,7 +2,7 @@ Personal Brand
 ==============
 
 Name: Ananya
-Title: Aspiring Data Science Engineer
+Title: Aspiring Data Science Student
 
 Tagline:
 I turn raw data into actionable insights.
